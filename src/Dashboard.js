@@ -5,8 +5,7 @@ class Dashboard extends Component {
     return (
       <div>
         <h2>/users</h2>
-        <div className = "buttonstotheright"><a href="/registeruser#/registeruser">Register new user</a>
-        <a href="/login">Login</a>
+        <div className = "buttonstotheright"><a href="/createuser#/createuser">Register user</a>
         </div>
         <input type="text" name="username" placeholder="Insert username here"></input>
         <td>
@@ -14,7 +13,6 @@ class Dashboard extends Component {
         </td>
         <div className = "loginregisterbuttons">
           <button onclick="">Login</button>
-          <button onclick="">Register</button>
         </div>
       </div>
     );

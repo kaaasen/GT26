@@ -6,9 +6,13 @@ import {
 } from "react-router-dom";
 import Home from "./Home";
 import Dashboard from "./Dashboard";
-import JsonObj from "./JsonObj";
 import Restaurants from "./Restaurants";
-import RegisterUser from "./RegisterUser";
+import CreateUser from "./CreateUser";
+import UpdateUser from "./UpdateUser";
+import CreateRestaurantReview from "./CreateRestaurantReview";
+import UpdateRestaurantReview from "./UpdateRestaurantReview";
+import CreateRestaurant from "./CreateRestaurant";
+import UpdateRestaurant from "./UpdateRestaurant";
 
 class Main extends Component {
   render() {
@@ -21,17 +25,19 @@ class Main extends Component {
           <ul className="header">
           <li><NavLink to="/">Home</NavLink></li>
           <li><NavLink to="/dashboard">User dashboard</NavLink></li>
-          <li><NavLink to="/restaurants">Restaurants</NavLink></li>
-          <li><NavLink to="/jsonobj">JSON</NavLink></li>
-          <li><NavLink to="/registeruser">Register User</NavLink></li>
+          <li><NavLink to="/restaurants">Restaurants & Reviews</NavLink></li>
           </ul>
           <div className="content">
             <div class = "paddedcontent">
               <Route exact path="/" component={Home}/>
               <Route path="/dashboard" component={Dashboard}/>
               <Route path="/restaurants" component={Restaurants}/>
-              <Route path="/jsonobj" component={JsonObj}/>
-              <Route path="/registeruser" component={RegisterUser}/>
+              <Route path="/createuser" component={CreateUser}/>
+              <Route path="/updateuser" component={UpdateUser}/>
+              <Route path="/createrestaurantreview" component={CreateRestaurantReview}/>
+              <Route path="/updaterestaurantreview" component={UpdateRestaurantReview}/>
+              <Route path="/createrestaurant" component={CreateRestaurant}/>
+              <Route path="/updaterestaurant" component={UpdateRestaurant}/>
               </div>
             </div>
         </div>

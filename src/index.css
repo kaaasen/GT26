@@ -104,6 +104,8 @@ ul.header li a {
   margin-left: 5%;
 }
 
+.submissionfield { width: 270px; height: 90px; border: 1px solid #999999; padding: 5px; }
+
 .tab {
   padding-right: 5px;
 }
