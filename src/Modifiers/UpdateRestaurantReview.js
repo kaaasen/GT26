@@ -4,8 +4,7 @@ class UpdateRestaurantReview extends Component {
   render() {
     return (
       <div>
-      <form action='http://task26.herokuapp.com/review/update' method="put">
-      <h2>This page should ONLY pop up if you are a registred REVIEWER or ANONYMOUS</h2>
+      <form action='http://task26.herokuapp.com/review/update' method="post">
       <br/>
       <input type="number" name="rating" placeholder="rating"></input><br/>
       <input type="text" name="reviewText" placeholder="reviewtext"></input><br/>

@@ -4,15 +4,18 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
-import Home from "./Home";
-import Dashboard from "./Dashboard";
-import Restaurants from "./Restaurants";
-import CreateUser from "./CreateUser";
-import UpdateUser from "./UpdateUser";
-import CreateRestaurantReview from "./CreateRestaurantReview";
-import UpdateRestaurantReview from "./UpdateRestaurantReview";
-import CreateRestaurant from "./CreateRestaurant";
-import UpdateRestaurant from "./UpdateRestaurant";
+import Home from "./MainPages/Home";
+import Dashboard from "./MainPages/Dashboard";
+import Restaurants from "./MainPages/Restaurants";
+import CreateUser from "./Modifiers/CreateUser";
+import UpdateUser from "./Modifiers/UpdateUser";
+import CreateRestaurantReview from "./Modifiers/CreateRestaurantReview";
+import UpdateRestaurantReview from "./Modifiers/UpdateRestaurantReview";
+import CreateRestaurant from "./Modifiers/CreateRestaurant";
+import UpdateRestaurant from "./Modifiers/UpdateRestaurant";
+import UserBox from "./containers/UserBox/UserBox";
+import RestaurantBox from "./containers/RestaurantBox/RestaurantBox";
+import RestaurantMapBox from "./containers/RestaurantMapBox/RestaurantMapBox";
 
 class Main extends Component {
   render() {
@@ -20,7 +23,7 @@ class Main extends Component {
       <HashRouter>
         <div>
           <div className="title">
-            <h1>Happyland restaurant reviews</h1>
+            <h1>Restaurant reviews</h1>
           </div>
           <ul className="header">
           <li><NavLink to="/">Home</NavLink></li>
@@ -38,6 +41,9 @@ class Main extends Component {
               <Route path="/updaterestaurantreview" component={UpdateRestaurantReview}/>
               <Route path="/createrestaurant" component={CreateRestaurant}/>
               <Route path="/updaterestaurant" component={UpdateRestaurant}/>
+              <Route path="/userbox" component={UserBox}/>
+              <Route path="/restaurantbox" component={RestaurantBox}/>
+              <Route path="/restaurantmapbox" component={RestaurantMapBox}/>
               </div>
             </div>
         </div>

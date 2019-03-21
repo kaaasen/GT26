@@ -1,0 +1,14 @@
+{"restaurants":[
+	{
+		"id": 1,
+		"name": "KFC US",
+		"address": "851 Eastern Bypass, Richmond, KY 40475, USA",
+		"category": "Fastfood"
+	},
+	{
+		"id": 2,
+		"name":"McD SA",
+		"address":"6 Smuts St, Malmesbury, 7299, Sør-Afrika",
+		"description": "Burgers"
+	}
+]}
