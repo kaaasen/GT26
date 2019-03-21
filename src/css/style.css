@@ -29,7 +29,7 @@ h1 {
   font-family: "Calibri";
 }
 
-h2, p, ul, li {
+h2, h3, h4, p, ul, li {
   color: #ffffff;
   font-family: "Calibri";
 }
@@ -66,6 +66,26 @@ ul.header li {
 
 ul.header li a {
   color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  padding: 20px;
+  text-decoration: none;
+}
+
+ul.sub {
+  background-color: #0277bd;
+  padding: 0;
+  border: 2px solid white;
+}
+
+ul.sub li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+
+ul.sub li a {
+  color: white;
   display: inline-block;
   font-weight: bold;
   padding: 20px;
@@ -117,12 +137,22 @@ ul.header li a {
   margin-left: 5%;
 }
 
+.sub {
+  border: 2px solid white;
+  border-radius: 12px;
+  margin-left: 22%;
+  margin-top: 0%;
+  opacity: 0.9;
+  width: 60%;
+}
+
 .submissionfield {
   width: 270px;
   height: 90px;
   border: 1px
   solid #999999;
-  padding: 5px; }
+  padding: 5px;
+}
 
 .tab {
   padding-right: 5px;
