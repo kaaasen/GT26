@@ -7,7 +7,7 @@ class CreateRestaurantReview extends Component {
       <form action='https://task26.herokuapp.com/review/create' method="post">
       <br/>
       <input type="number" name="rating" placeholder="rating"></input><br/>
-      <input type="text" name="reviewText" placeholder="reviewtext"></input><br/>
+      <input type="text" name="reviewtext" placeholder="reviewtext"></input><br/>
       <input type="number" name="user_id" placeholder="user_id"></input><br/>
       <input type="number" name="restaurant_id" placeholder="restaurant_id"></input><br/>
       <div className = "loginregisterbuttons">
