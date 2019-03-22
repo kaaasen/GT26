@@ -1,11 +1,12 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 
 const RestaurantMapCard = (props) => {
   return (
     <div>
       <h2 className="card-title">
         {props.name}</h2>
+        <h3><b>Average rating: </b>{parseFloat(props.avgrating).toFixed(1)}</h3>
         <div className="mapouter">
           <div className="gmap_canvas">
             <iframe
@@ -21,10 +22,7 @@ const RestaurantMapCard = (props) => {
             </iframe>
           </div>
         </div>
-        <article>
-         <b>Category: </b>{props.category}<br/>
-         <b>Description: </b>{props.description}<br/><br/><br/>
-        </article>
+        <br/><br/>
       </div>
     )
 };

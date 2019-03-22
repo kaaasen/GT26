@@ -13,8 +13,6 @@ class Dashboard extends Component {
             <button onclick="">Login</button>
           </div>
         </div>
-          <a href="/createuser#/createuser">Register user</a>
-          <a href = "./containers/userbox/userbox#/userbox">display user info</a>
       </div>
     );
   }

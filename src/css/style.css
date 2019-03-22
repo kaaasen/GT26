@@ -73,7 +73,7 @@ ul.header li a {
 }
 
 ul.sub {
-  background-color: #0277bd;
+  background-color: #8bc34a;
   padding: 0;
   border: 2px solid white;
 }
@@ -101,7 +101,7 @@ ul.sub li a {
   border: 2px solid #ffffff;
   border-radius: 12px;
   margin-left: 22%;
-  opacity: 0.9;
+  opacity: 0.85;
   padding: 0;
   width: 60%;
 }
@@ -121,7 +121,7 @@ ul.sub li a {
 }
 
 .loginregisterbuttons {
-  margin-left: 220px;
+  margin-left: 185px;
   margin-top: 5px;
 }
 
@@ -144,6 +144,7 @@ ul.sub li a {
   margin-top: 0%;
   opacity: 0.9;
   width: 60%;
+  justify-content: center;
 }
 
 .submissionfield {
@@ -163,4 +164,13 @@ ul.sub li a {
   margin-left: 50px;
   opacity: 0.85;
   text-align: center;
+}
+
+.card {
+  color: #ffffff;
+}
+
+.card-body {
+  border: 3px;
+  border-color: #ffffff;
 }
