@@ -8,7 +8,7 @@ class LatestReviewBox extends React.Component {
   };
 
   componentDidMount() {
-      fetch('https://task26.herokuapp.com/review/latest').then(res => res.json())
+      fetch('http://task26.herokuapp.com/review/latest').then(res => res.json())
       .then(data => {
           console.log(data);
           this.setState({

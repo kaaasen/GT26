@@ -4,7 +4,7 @@ class UpdateUser extends Component {
   render() {
     return (
       <div>
-      <form action='https://task26.herokuapp.com/user/update' method="post">
+      <form action='http://task26.herokuapp.com/user/update' method="post">
       <h2>Update user</h2>
       <br/>
       <input type="number" name="user_id" placeholder="user_id"></input><br/>

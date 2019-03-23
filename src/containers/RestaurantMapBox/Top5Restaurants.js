@@ -1,14 +1,16 @@
 import React from "react";
-import RestaurantCard from '../../components/ReviewCard'
+//import dataFile from './data.json'
+import RestaurantCard from '../../components/RestaurantMapCard'
 
-class LatestReviewBox extends React.Component {
+class Top5Restaurants extends React.Component {
 
   state = {
     restaurants: []
+    //allRestaurants : []
   };
 
   componentDidMount() {
-      fetch('http://task26.herokuapp.com/review/').then(res => res.json())
+      fetch('https://task26.herokuapp.com/restaurant').then(res => res.json())
       .then(data => {
           console.log(data);
           this.setState({
@@ -34,22 +36,23 @@ function RestaurantList(props) {
 const restaurants = props.restaurants;
   const listRestaurants = restaurants.map((res) =>
         <RestaurantCard
-          review_id = {res.review_id}
-          rating = {res.rating}
-          reviewText = {res.reviewtext}
+          id = {res.id}
+          name = {res.name}
+          address = {res.address}
+          category={res.category}
+          user_id={res.user_id}
           created_at={res.created_at}
           updated_at={res.updated_at}
-          user_id={res.user_id}
-          restaurant_id={res.restaurant_id}
-          name={res.name}
       />
         );
 
   return (
-    <div className="row">
-    {listRestaurants}
-  </div>
-    );
+    for (i = 0; i < 2; i++) {
+      <div className="row">
+      {listRestaurants}
+      </div>
+    }
+  );
 }
 
-export default LatestReviewBox;
+export default Top5Restaurants;

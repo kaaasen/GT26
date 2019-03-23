@@ -4,7 +4,7 @@ class UpdateRestaurant extends Component {
   render() {
     return (
       <div>
-      <form action='https://task26.herokuapp.com/restaurant/update' method="post">
+      <form action='http://task26.herokuapp.com/restaurant/update' method="post">
       <br/>
       <input type="text" name="name" placeholder="name"></input><br/>
       <input type="text" name="address" placeholder="address"></input><br/>

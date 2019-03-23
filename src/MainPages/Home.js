@@ -20,12 +20,12 @@ class Home extends Component {
     return (
       <div>
         <h4>Search for restaurant by category</h4>
-        <form action='https://task26.herokuapp.com/restaurant/category/' method="get">
+        <form action='http://task26.herokuapp.com/restaurant/category/' method="get">
         <input type="text" name="category" placeholder="e.g. italian, familiy"></input>
         </form>
         <br/>
         <h4>Search for restaurant by name</h4>
-        <form action='https://task26.herokuapp.com/restaurant/' method="get">
+        <form action='http://task26.herokuapp.com/restaurant/' method="get">
         <input type="text" name="name" placeholder="e.g Bella Napoli, Egon"></input>
         </form>
         <br/><br/><br/>

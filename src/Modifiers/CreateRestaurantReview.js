@@ -4,7 +4,7 @@ class CreateRestaurantReview extends Component {
   render() {
     return (
       <div>
-      <form action='https://task26.herokuapp.com/review/create' method="post">
+      <form action='http://task26.herokuapp.com/review/create' method="post">
       <br/>
       <input type="number" name="rating" placeholder="rating"></input><br/>
       <input type="text" name="reviewtext" placeholder="reviewtext"></input><br/>

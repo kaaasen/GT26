@@ -9,7 +9,7 @@ class Top5ReviewBox extends React.Component {
   };
 
   componentDidMount() {
-      fetch('https://task26.herokuapp.com/restaurant/review/top').then(res => res.json())
+      fetch('http://task26.herokuapp.com/restaurant/review/top').then(res => res.json())
       .then(data => {
           console.log(data);
           this.setState({

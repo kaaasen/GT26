@@ -4,7 +4,7 @@ class RegisterUser extends Component {
   render() {
     return (
       <div>
-        <form action='https://task26.herokuapp.com/user/create' method="post">
+        <form action='http://task26.herokuapp.com/user/create' method="post">
         <h2>Register user</h2>
         <p>Please register a new user if you aren't already registered.
         </p>
